@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/my_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/tauri"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnVisitWebSite"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="Visit our web site"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/ic_website"
+                        app:iconPadding="20sp" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnReview"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="Write review on web site"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/ic_ball_point_pen"
+                        app:iconPadding="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnVersion"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/app_version"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/ic_versions"
+                        app:iconPadding="20sp" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPrivacy"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="Privacy Policy"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/ic_privacy_policy"
+                        app:iconPadding="20sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRate"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="Rate us on Google Play"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/ic_google_play"
+                        app:iconPadding="20sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Developer"
+                        android:textColor="@color/black" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCompany"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/developer_name"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        app:icon="@drawable/ic_google_code"
+                        app:iconPadding="20sp" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnWeb"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/developer_website"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        app:icon="@drawable/ic_website"
+                        app:iconPadding="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

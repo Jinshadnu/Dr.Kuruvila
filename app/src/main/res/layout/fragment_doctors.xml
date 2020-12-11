@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_our_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Our Doctors"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amaranth"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/text_our_doctor"
+            android:layout_marginLeft="15dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@id/text_our_doctor"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

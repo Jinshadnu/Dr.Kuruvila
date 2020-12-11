@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BookingForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_location"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/amaranth"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGotoMap"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="start|center_vertical"
+                android:text="Locate on Map"
+                android:textAllCaps="false"
+                android:fontFamily="@font/amaranth"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_map_marker"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                app:iconTint="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                app:iconPadding="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCall"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="start|center_vertical"
+                android:text="Call Us"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_call"
+                android:fontFamily="@font/amaranth"
+                app:iconPadding="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                app:iconTint="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Kuruvilla Dental Care</string>
+
+    <string name="slide1Text">Easy Login</string>
+    <string name="slide1Desc1">You can easily login to your account</string>
+
+    <string name="slide1Text2">Book your seat</string>
+    <string name="slide1Desc2">Book you seat as per your date and time</string>
+
+    <string name="slide1Text3">Fast booking</string>
+    <string name="slide1Desc3">You will get notified while booking is confirm</string>
+
+    <string name="slide1Text4">Analyse history</string>
+    <string name="slide1Desc4">You can now analyse your old visits</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_activity_booking_form">Booking Form</string>
+    <string name="nav_header_title">Dr. Kuruvilla</string>
+    <string name="nav_header_subtitle">04885 212 242</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_exit">Exit</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_share">Share</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="doctors">Doctors</string>
+    <string name="working_times">Working Times</string>
+    <string name="communicate">Communicate</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about">About</string>
+    <string name="app_version">Version 1.0.0.5</string>
+    <string name="developer_name">Vingcoz Technologies Pvt. Ltd.</string>
+    <string name="developer_website">www.vingcoz.com</string>
+    <string name="share_content">Hey, please check this app for online appointment booking.\nDoctor Kuruvilla Dental Hospital  \n\nNehru Nagar Road, \nKunnamkulam, \nKerala 680503, \nIndia \n\n04885 212 242    \n\n  https://play.google.com/store/apps/details?id=com.vingcoz.dentalapp</string>
+    <string name="address_location">Nehru Nagar Road, \nKunnamkulam, \nKerala 680503, \nIndia \n\n04885 212 242</string>
+
+</resources>

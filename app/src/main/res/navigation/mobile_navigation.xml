@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.vingcoz.dentalapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.vingcoz.dentalapp.ui.doctors.DoctorFragment"
+        android:label="Doctors"
+        tools:layout="@layout/fragment_doctors" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.vingcoz.dentalapp.ui.workingtime.WorkingFragment"
+        android:label="Working Times"
+        tools:layout="@layout/fragment_working_time" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.vingcoz.dentalapp.ui.contactus.ContactFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.vingcoz.dentalapp.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.vingcoz.dentalapp.ui.about.AboutFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about" />
+</navigation>
