@@ -1,15 +1,18 @@
 package com.vingcoz.dentalapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.vingcoz.dentalapp.BookingForm;
 import com.vingcoz.dentalapp.R;
 import com.vingcoz.dentalapp.models.DoctorItem;
 
@@ -40,6 +43,15 @@ public class DoctorHorizontalRecycle extends RecyclerView.Adapter<DoctorHorizont
         holder.txtName.setText(VideoSingle.getDName());
         holder.txtSpeceial.setText(VideoSingle.getDSpecialization());
         holder.txtTime.setText(VideoSingle.getDTime());
+
+        holder.button_booking.setOnClickListener(v -> {
+            Intent intent=new Intent(mCtx.getApplicationContext(), BookingForm.class);
+            intent.putExtra("doctor_name",VideoSingle.getDName());
+            intent.putExtra("doctor_id",VideoSingle.getDId());
+            mCtx.startActivity(intent);
+        });
+
+
     }
 
     @Override
@@ -51,6 +63,7 @@ public class DoctorHorizontalRecycle extends RecyclerView.Adapter<DoctorHorizont
 
         TextView txtName, txtSpeceial, txtTime;
         CardView CardSection;
+        public Button button_booking;
 
 
         public VideoViewHolder(View itemView) {
@@ -59,6 +72,7 @@ public class DoctorHorizontalRecycle extends RecyclerView.Adapter<DoctorHorizont
             txtName = itemView.findViewById(R.id.idname);
             txtSpeceial = itemView.findViewById(R.id.idSpecialization);
             txtTime = itemView.findViewById(R.id.idTime);
+            button_booking=itemView.findViewById(R.id.button_booking);
         }
     }
 

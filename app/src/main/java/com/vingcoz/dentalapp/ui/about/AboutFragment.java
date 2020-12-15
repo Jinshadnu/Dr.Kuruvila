@@ -42,7 +42,7 @@ public class AboutFragment extends Fragment {
         });
 
         btnVersion.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.vingcoz.laundryapp"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.vingcoz.dentalapp"));
             startActivity(browserIntent);
         });
 

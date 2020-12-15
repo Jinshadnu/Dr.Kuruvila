@@ -57,6 +57,9 @@ public class BookingForm extends AppCompatActivity {
     TextInputLayout layoutBookingDate;
     TextInputLayout layoutBookingTime;
 
+    public String doctor_name;
+
+    public int doctor_id;
     TextView txtViewDoc;
     TextView txtViewPurpose;
 
@@ -100,6 +103,8 @@ public class BookingForm extends AppCompatActivity {
         progressDialog.show();
         progressDialog.setCancelable(false);
 
+        doctor_name=getIntent().getStringExtra("doctor_name");
+        doctor_id=getIntent().getIntExtra("doctor_id",0);
         txtPatientID = findViewById(R.id.txtPatientCode);
         txtPatientName = findViewById(R.id.txtname);
         txtMobile = findViewById(R.id.txtMobile);
@@ -107,11 +112,11 @@ public class BookingForm extends AppCompatActivity {
         txtEmail = findViewById(R.id.txtEmail);
         txtOtp = findViewById(R.id.txtOtp);
 
-        txtViewDoc = findViewById(R.id.txtViewDoc);
+        //txtViewDoc = findViewById(R.id.txtViewDoc);
         txtViewPurpose = findViewById(R.id.txtViewPurpose);
         txtOTPLayout = findViewById(R.id.txtOTPLayout);
 
-        spDoctor = findViewById(R.id.spDoctor);
+        //spDoctor = findViewById(R.id.spDoctor);
         spPurpose = findViewById(R.id.spPurpose);
 
         tDate = findViewById(R.id.txtBDate);
@@ -171,17 +176,17 @@ public class BookingForm extends AppCompatActivity {
             timepickerdialog.show();
         });
 
-        spDoctor.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       int pos, long id) {
-                int intArrPosition = spDoctor.getSelectedItemPosition();
-                DoctorID = arrDoctorID[intArrPosition];
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> arg0) {
-            }
-        });
+//        spDoctor.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            public void onItemSelected(AdapterView<?> parent, View view,
+//                                       int pos, long id) {
+//                int intArrPosition = spDoctor.getSelectedItemPosition();
+//                DoctorID = arrDoctorID[intArrPosition];
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> arg0) {
+//            }
+//        });
         spPurpose.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int pos, long id) {
@@ -253,7 +258,7 @@ public class BookingForm extends AppCompatActivity {
 
                     ArrayAdapter<String> adapter;
                     adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, items);
-                    spDoctor.setAdapter(adapter);
+                   // spDoctor.setAdapter(adapter);
 
                 } else {
                     Toast.makeText(BookingForm.this, "Error : " + response.body().getMessage(), Toast.LENGTH_SHORT).show();
@@ -325,7 +330,7 @@ public class BookingForm extends AppCompatActivity {
                 Objects.requireNonNull(txtMobile.getText()).toString(),
                 Objects.requireNonNull(txtAddress.getText()).toString(),
                 Objects.requireNonNull(txtEmail.getText()).toString(),
-                DoctorID, PurposeID,
+                doctor_id, PurposeID,
                 mYear + "-" + mMonth + "-" + mDay,
                 Objects.requireNonNull(tTime.getText()).toString(),
                 " "
@@ -377,7 +382,7 @@ public class BookingForm extends AppCompatActivity {
                     progressDialog.dismiss();
                     OtpId = response.body().getOtpid();
 
-                    txtViewDoc.setVisibility(View.GONE);
+                    //txtViewDoc.setVisibility(View.GONE);
                     txtViewPurpose.setVisibility(View.GONE);
                     spDoctor.setVisibility(View.GONE);
                     spPurpose.setVisibility(View.GONE);

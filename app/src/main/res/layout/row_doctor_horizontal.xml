@@ -2,24 +2,25 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="158dp"
+    android:layout_height="190dp"
     android:layout_marginStart="10dp"
     android:layout_marginEnd="10dp"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
     android:clickable="true"
     android:focusable="true"
-    app:cardCornerRadius="4dp"
+    app:cardCornerRadius="2dp"
     app:cardElevation="6dp">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
        >
 
         <RelativeLayout
+            android:id="@+id/relative_header"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/colorPrimaryDark">
@@ -36,52 +37,80 @@
 
 
         </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_doctor"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/relative_header"
+            android:layout_marginTop="15dp"/>
+
+
         <TextView
             android:id="@+id/idname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/tauri"
+            android:fontFamily="@font/amaranth"
             android:text="Dr. Doctor Name Here"
+            android:layout_toRightOf="@id/image_doctor"
+            android:layout_below="@id/relative_header"
             android:textAlignment="center"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:padding="2dp"
-            android:drawableLeft="@drawable/ic_baseline_person_24"
             android:layout_marginTop="10dp"
             android:drawablePadding="8dp"
             android:layout_marginLeft="10dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/idSpecialization"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/idname"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:textSize="14dp"
-            android:fontFamily="@font/roboto_mono_medium_italic"
-            android:text="OrthoExampleHere"
-            android:padding="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/image_doctor"
             android:drawablePadding="8dp"
-            android:drawableLeft="@drawable/ic_baseline_work_24"
-            android:textColor="@color/colorPrimary" />
+            android:fontFamily="@font/amaranth"
+            android:padding="2dp"
+            android:text="OrthoExampleHere"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/idTime"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:fontFamily="sans-serif-condensed-light"
             android:text="00:00 am to 00:00 pm"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:padding="2dp"
+            android:layout_below="@id/idSpecialization"
+            android:layout_toRightOf="@id/image_doctor"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
             android:drawableLeft="@drawable/ic_baseline_access_time_24"
             android:drawablePadding="8dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/white" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/button_booking"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amaranth"
+            android:background="@drawable/capsule_background"
+            android:text="Book Now"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
 
 
 </androidx.cardview.widget.CardView>

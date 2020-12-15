@@ -28,12 +28,12 @@ public class HomeActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         MaterialButton btnNewBooking = findViewById(R.id.fab);
-        btnNewBooking.setOnClickListener(view -> {
-
-                    Intent OpenBooking = new Intent(this, BookingForm.class);
-                    startActivity(OpenBooking);
-                }
-        );
+//        btnNewBooking.setOnClickListener(view -> {
+//
+//                    Intent OpenBooking = new Intent(this, BookingForm.class);
+//                    startActivity(OpenBooking);
+//                }
+//        );
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(

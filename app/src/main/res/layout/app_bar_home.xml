@@ -22,21 +22,21 @@
 
     <include layout="@layout/content_home" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/fab"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="-10dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:elevation="10dp"
-        android:gravity="start|center_vertical"
-        android:text="BOOK AN APPOINTMENT"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:icon="@drawable/ic_hospital_3"
-        app:iconPadding="20sp"
-        app:iconTint="@color/white" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/fab"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginBottom="-10dp"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:elevation="10dp"-->
+<!--        android:gravity="start|center_vertical"-->
+<!--        android:text="BOOK AN APPOINTMENT"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:icon="@drawable/ic_hospital_3"-->
+<!--        app:iconPadding="20sp"-->
+<!--        app:iconTint="@color/white" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

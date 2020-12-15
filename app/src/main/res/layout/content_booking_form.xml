@@ -200,21 +200,21 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/txtViewDoc"
-                style="@style/profileEditText"
-                android:layout_marginTop="5dp"
-                android:background="#FFFFFF"
-                android:text="Select your doctor"
-                android:fontFamily="@font/amaranth"
-                android:textColor="@color/colorPrimary" />
+<!--            <TextView-->
+<!--                android:id="@+id/txtViewDoc"-->
+<!--                style="@style/profileEditText"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:text="Select your doctor"-->
+<!--                android:fontFamily="@font/amaranth"-->
+<!--                android:textColor="@color/colorPrimary" />-->
 
-            <Spinner
-                android:id="@+id/spDoctor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/background_spinner"
-                android:padding="3dp" />
+<!--            <Spinner-->
+<!--                android:id="@+id/spDoctor"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/background_spinner"-->
+<!--                android:padding="3dp" />-->
 
             <TextView
                 android:id="@+id/txtViewPurpose"
